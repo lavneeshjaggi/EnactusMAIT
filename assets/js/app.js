@@ -9,5 +9,3 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
-
-$("#home").scrollTo("300px");
