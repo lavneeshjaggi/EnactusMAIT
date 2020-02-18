@@ -17,6 +17,12 @@ header {
     z-index: 1;
 }
 
+nav {
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 1;
+}
+
 #enactus {
     height: 60px;
     margin-top: -30px;
@@ -46,7 +52,7 @@ a:hover {
 }
 
 #landing-header {
-    padding-bottom: 43vh;
+    padding-bottom: 52vh;
     padding-top: 40vh;
     position: relative;
     text-align: center;
@@ -54,7 +60,10 @@ a:hover {
 }
 
 #landing-header h1 {
+    background: rgba(0, 0, 0, 0.3);
     color: #fff;
+    margin: auto;
+    width: 30%;
 }
 
 .slideshow { 
@@ -166,4 +175,16 @@ footer {
     background: #232526;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media screen and (max-width: 765px) {
+    .slider {
+        display: none;
+    }
+
+    section {
+        margin: 0;
+        position: relative;
+        padding: 0;
+    }
 }
