@@ -207,13 +207,16 @@ a {
 }
 
 @media screen and (max-width: 765px) {
-    .slid {
-        display: none;
+    .slide {
+        /* display: none; */
     }
 
-    section {
-        margin: 0;
-        position: static;
-        padding: 0;
+    .section {
+        background: #000;
+        color: #fff;
+    }
+
+    body {
+        background: #000;
     }
 }
