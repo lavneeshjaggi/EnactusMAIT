@@ -44,7 +44,8 @@ a {
 
 a:hover {
     background-color: rgba(255, 194, 34, 0.9);
-    color: #000;
+    color: #fff;
+    -webkit-transition: background-color 0.9s;
 } 
 
 .slider {
@@ -52,7 +53,7 @@ a:hover {
 }
 
 #landing-header {
-    padding-bottom: 52vh;
+    padding-bottom: 46vh;
     padding-top: 40vh;
     position: relative;
     text-align: center;
@@ -178,13 +179,13 @@ footer {
 }
 
 @media screen and (max-width: 765px) {
-    .slider {
+    .slid {
         display: none;
     }
 
     section {
         margin: 0;
-        position: relative;
+        position: static;
         padding: 0;
     }
 }

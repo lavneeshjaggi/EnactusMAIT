@@ -1,5 +1,2 @@
-var header = document.querySelector("header");
-
-header.addEventListener("scroll", function(){
-    console.log("Works");
-});
+var body1 = document.querySelector("body");
+var body2 = document.getElementsByTagName("body")[0];
