@@ -5,12 +5,38 @@ body {
     padding: 0;
 }
 
-@keyframes loader-inner {
-    0% { height: 0%;}
-    25% { height: 0%;}
-    50% { height: 100%;}
-    75% { height: 100%;}
-    100% { height: 0%;}
+.hide {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+    -webkit-transition: opacity 3s;
+}
+
+.loader {
+    align-items: center;
+    background: #0E1120;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 .yellow {
@@ -34,7 +60,7 @@ nav {
 
 #enactus {
     height: 60px;
-    margin-top: -30px;
+    margin-top: -15px;
     width: 100px;
 }
 
@@ -143,20 +169,27 @@ a:hover {
     }
 }
 
-section {
-    /* color: #fff; */
-    position: absolute;
-    z-index: 2;
-}
-
-.section {
+.section-1 {
     background-attachment: fixed;
     background-image: url(https://robertsenactus.org/wp-content/uploads/2014/08/Summer-Background-004.gif);
-    /* background-image: url("http://enactusiitd.org/img/back34.png");     */
     background-repeat: no-repeat;
     background-size: 100%;
     margin: 0;
     padding: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.section-2 {
+    background-attachment: fixed;
+    background-image: url(https://i.pinimg.com/originals/9b/28/b9/9b28b918047895baff2ff0bac4be7eda.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
 }
 
 section .space {
@@ -206,17 +239,18 @@ a {
     background-color: #414345;
 }
 
-@media (max-width: 980px) {
-    .slide {
-        /* display: none; */
+@media (max-width: 1024px) {
+    .section-1 {
+        background-image: url(https://robertsenactus.org/wp-content/uploads/2014/08/Summer-Background-004.gif);        
+        background-size: cover;
+        position: relative;
+        z-index: 1;
     }
 
-    .section {
-        background: #000;
-        color: #fff;
-    }
-
-    body {
-        background: #000;
+    .section-2 {
+        background-image: url(https://i.pinimg.com/originals/9b/28/b9/9b28b918047895baff2ff0bac4be7eda.jpg);        
+        background-size: cover;
+        position: relative;
+        z-index: 1;
     }
 }

@@ -8,6 +8,9 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
     crossorigin="anonymous">
 
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/stylesheet.css">
 
@@ -21,9 +24,12 @@
     <!-- Make Slider Compatible With All Browsers -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
 </head>
-<body>
+<body>   
+    <div class="container-fluid loader">
+        <img src="./imgs/loader.gif" class="img-fluid">
+    </div>
     <div class="slider">
-        <nav id="navbar" class="fixed-top navbar navbar-expand-lg">
+        <nav id="navbar" class="fixed-top navbar navbar-expand-lg hide">
             <img id="enactus" src="./imgs/enactusLogo.png" alt="" class="navbar-brand">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">   
@@ -34,19 +40,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" id="home" href="#">Home</a>
+                    <a class="nav-link rounded" id="home" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link rounded" href="#">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Current Ventures</a>
+                    <a class="nav-link rounded" href="#">Current Ventures</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Our Team</a>
+                    <a class="nav-link rounded" href="#">Our Team</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link rounded" href="#">Contact Us</a>
                 </li>
             </div>
         </nav>
@@ -66,8 +72,13 @@
         </div>
     </div>
 
-    <section class="container-fluid section">
-        <div class="container space">
+    <section class="container-fluid section-2">
+        <br>
+        <br>
+        <div class="container text-center">
+            <button class="btn btn-lg btn-primary version">Switch Versions</button>
+        </div>
+        <div class="container space" data-aos="fade-up">
             <h2 class="display-2 text-center">About Us</h2>
             <p class="p1">
                 Enactus <span class="yellow">MAIT</span> is the student chapter of Enactus, an international organization of student, 
@@ -77,7 +88,7 @@
                 businesses and transforming them into successful entrepreneurs.
             </p>
         </div>
-        <div class="container space">
+        <div class="container space" data-aos="fade-up">
             <h2 class="display-2 text-center">Current Ventures</h2>
             <div class="jumbotron">
                 <h1 class="display-4">E-SUMMIT</h1>
@@ -97,7 +108,7 @@
                 </p>
             </div>
         </div>
-        <div class="container space">
+        <div class="container space" data-aos="fade-up">
             <h2 class="display-2 text-center">Our Team</h2>
             <p class="lead text-center">
                 <img src="./imgs/ourTeam.jpg" class="img-fluid">
@@ -157,6 +168,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
     crossorigin="anonymous"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 900,
+            easing: 'ease',
+            once: true
+        });
+    </script>
 
     <!-- Custom JS -->
     <script src="./assets/js/app.js"></script>
