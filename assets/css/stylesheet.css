@@ -1,6 +1,6 @@
 body {
     color: #000;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Marvel';
     margin: 0;
     padding: 0;
 }
@@ -58,7 +58,7 @@ nav {
 
 ul {
     margin: auto;
-    width: 70%;
+    width: 60%;
 }
 
 a {
@@ -80,8 +80,8 @@ a:hover {
 }
 
 #landing-header {
-    padding-bottom: 46vh;
-    padding-top: 40vh;
+    padding-bottom: 47vh;
+    padding-top: 47vh;
     position: relative;
     text-align: center;
     z-index: 1;
@@ -235,8 +235,13 @@ a {
     .section-1 {
         background-image: url(https://robertsenactus.org/wp-content/uploads/2014/08/Summer-Background-004.gif);        
         background-size: cover;
+        color: #000;
         position: relative;
         z-index: 1;
+    }
+
+    footer li {
+        margin-top: 30px;
     }
 
     .section-2 {
